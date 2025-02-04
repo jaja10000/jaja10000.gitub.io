@@ -1,13 +1,32 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="a message for you" />
-        <link rel="stylesheet" href="style.html">
-        <title>for you!!!</title>
-        <meta name="from jasmine" content="a confession" />
-    </head>
     <body>
-        <p>hiii i just want to let you know that no matter what you're feeling remember that you are slayable hihi</p>
-        <button>thank you</button>
+        <div>
+            <h1>Do you like me?</h1>
+            <button id="yesButton">Yes darling</button>
+            <button id="no">No</button>
+        </div>
+
+        <style>
+            div{
+                text-align: center;
+                vertical-align: middle;
+            }
+            #no{
+                position: absolute;
+            }
+        </style>
+        <script>
+            document.getElementByld("yesButton").addEventListener("click",function(){
+            alert("YEYYY I LIKE YOU A LOOOOOT");
+        });
+            var b = document.getElementById("no")
+            b.addEventListener("click",change);
+            function change ()  {
+                var i = Math.floor(Math.random()*1000)+1;
+                var j = Math.floor(Math.random()*700)+1;
+                b.style.left = i+"px";
+                b.style.top = j+"px";
+            }
+        </script>
     </body>
 </html>
